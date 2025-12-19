@@ -1,4 +1,4 @@
-/*  your css code here. If applicable */
+/* your css code here. If applicable */
 
 * {
   box-sizing: border-box;
@@ -10,10 +10,9 @@
   display: grid;
   height: 100vh;
   gap: 10px;
-  padding: 10;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  padding: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
 }
 
 #grid div {
@@ -23,44 +22,22 @@
   padding: 20px;
 }
 
-
 #grid div:nth-child(1) {
-  grid-column: 1 / -1;
+  grid-column: span 4 / auto;
 }
 
 #grid div:nth-child(2) {
-  grid-row: 2 / -1;
-  grid-column: 1 / 2;
-}
-
-#grid div:nth-child(3) {
-  grid-column: 2 / 4;
+  grid-row: span 4 / auto;
 }
 
 #grid div:nth-child(4) {
-  grid-column: 4 / 5;
+  grid-column: span 2 / auto;
 }
 
 #grid div:nth-child(5) {
-  grid-column: 2 / 4;
-}
-
-#grid div:nth-child(6) {
-  grid-column: 4 / 5;
-}
-
-#grid div:nth-child(7) {
-  grid-column: 2 / 3;
-}
-
-#grid div:nth-child(8) {
-  grid-column: 3 / 4;
-}
-
-#grid div:nth-child(9) {
-  grid-column: 4 / 5;
+  grid-column: span 2 / auto;
 }
 
 #grid div:nth-child(10) {
-  grid-column: 2 / -1;
+  grid-column: span 3 / auto;
 }
