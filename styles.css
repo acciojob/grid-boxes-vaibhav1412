@@ -20,24 +20,20 @@
   color: white;
   font-size: 40px;
   padding: 20px;
-}
 
-#grid div:nth-child(1) {
-  grid-column: span 4 / auto;
 }
+.b1  { grid-column: 1 / -1; grid-row: 1; }
 
-#grid div:nth-child(2) {
-  grid-row: span 4 / auto;
-}
+.b2  { grid-column: 1; grid-row: 2 / 6; }
 
-#grid div:nth-child(4) {
-  grid-column: span 2 / auto;
-}
+.b3  { grid-column: 2; grid-row: 2; }
+.b4  { grid-column: 3 / 5; grid-row: 2; }
 
-#grid div:nth-child(5) {
-  grid-column: span 2 / auto;
-}
+.b5  { grid-column: 2 / 4; grid-row: 3; }
+.b6  { grid-column: 4; grid-row: 3; }
 
-#grid div:nth-child(10) {
-  grid-column: span 3 / auto;
-}
+.b7  { grid-column: 2; grid-row: 4; }
+.b8  { grid-column: 3; grid-row: 4; }
+.b9  { grid-column: 4; grid-row: 4; }
+
+.b10 { grid-column: 2 / -1; grid-row: 5; }
